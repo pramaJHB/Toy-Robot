@@ -1,0 +1,21 @@
+import turtle
+# open screen and create border
+turtle.title('Toy Robot')
+turtle.bgcolor('light gray')
+b = turtle.Turtle()
+s = b.getscreen()
+s.setup(485, 970, 0, 0)
+s.setworldcoordinates(-120, -220, 120, 220)
+b.hideturtle()
+b.up()
+b.goto(-101, 200)
+b.pen(pencolor='red',fillcolor='pale green', pensize=5, speed=0)
+b.down()
+b.seth(0)
+b.begin_fill()
+for i in range(2):
+    b.fd(201)
+    b.rt(90)
+    b.fd(401)
+    b.rt(90)
+b.end_fill()
